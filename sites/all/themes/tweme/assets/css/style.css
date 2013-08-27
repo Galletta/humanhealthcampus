@@ -239,7 +239,7 @@ a[href^='http']:hover{
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   position:static;
-  top:0;
+  padding-bottom: 0;
 }
 
 .dropdown-submenu {
@@ -268,14 +268,20 @@ a[href^='http']:hover{
 .dropdown-submenu.active > .dropdown-menu {
 	float:none;
 	display:block;
+	margin-bottom:0;
 }
 
 .nav > li > a {
     display: inline;
 }
 
-.nav > li, .nav > ul {
-    display: inline-block;
+ul.nav {
+    display: block;
+}
+
+.nav li{
+    display: block;
+    float:none;
 }
 
 .dropdown-submenu.active:hover{
@@ -348,6 +354,12 @@ aside li a.active, aside li a.active:hover {
 .dropdown-menu .dropdown-submenu.active > a{ /* gray */
 	background: url('../img/dropdown-menu-icons.png') right 8px no-repeat;
 }
+
+li.active.dropdown-submenu{
+	margin-bottom:0.5em;
+}
+
+
 
 /* END of aside menu */
 
