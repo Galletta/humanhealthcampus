@@ -1,0 +1,4 @@
+name = Expanded By Default
+description = Add new content as a menu item with "Expanded" flag on
+package = Administration
+core = 7.x

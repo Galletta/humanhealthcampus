@@ -1,0 +1,6 @@
+<?php
+function expanded_by_default_node_insert($node){
+  if ($node->menu['enabled'] == 1){
+    ($node->menu['expanded'] = 1);
+  }
+}
