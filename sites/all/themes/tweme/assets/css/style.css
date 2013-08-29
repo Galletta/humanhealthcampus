@@ -284,6 +284,10 @@ ul.nav {
     float:none;
 }
 
+.nav.nav-tabs li{
+    float:left;
+}
+
 .dropdown-submenu.active:hover{
 	border-bottom:none;
 }
