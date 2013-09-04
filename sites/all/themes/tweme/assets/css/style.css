@@ -52,9 +52,16 @@ a[href$='.pdf']{
 	background: url('../img/pdf-icon.png') left 2px no-repeat;
 }
 
-a[href^='http']:hover{
+a[href^='http']:after{
+	content:'';
 	padding-right:18px;
 	background: url('../img/external-icon.png') right 2px no-repeat;
+}
+
+a[href$='.pdf'][href^='http']:after{
+	content:'';
+	padding-right:0;
+	background: none;
 }
 
 /*HEADER STYLES:*/
@@ -363,12 +370,11 @@ li.active.dropdown-submenu{
 	margin-bottom:0.5em;
 }
 
-
-
 /* END of aside menu */
 
 
 /* CONTENT STYLES */
+
 .content p{
 	font-size: 0.875em;
 }
@@ -455,6 +461,72 @@ a.library-link:hover{
 	font-size: 0.875em;
 	list-style-type: decimal;
 }
+
+.image-stack{
+	text-align: justify;
+	width: 100%;
+}
+
+.image-stack:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height:0;
+}
+
+.image-stack img{
+	display:inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+
+.image-description-bottom span{
+	display:inline-block;
+	width:100%;
+	font-style: italic;
+	text-align: center;
+	margin-top: 1.5em;
+	padding-top:1em;
+	border-top:solid 1px #e9e9e9;
+}
+
+.image-description-right:after, .image-description-left:after{
+	display: block;
+	content:'';
+	clear: both;
+}
+
+.image-description-right img{
+	float: left;
+	margin-right: 2em;
+}
+
+.image-description-right .image-description{
+	display: block;
+	font-style: italic;
+}
+
+.image-description-left{
+	text-align: right;
+}
+
+.image-description-left img{
+	display: block;
+	float: right;
+	margin-left:2em;
+}
+
+.image-description-left .image-description{
+	display: block;
+	font-style: italic;
+}
+
+
+.image-description-right, .image-description-left {
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
 /* END of CONTENT STYLES */
 
 .breadcrumb{
@@ -647,10 +719,6 @@ aside, section{
 
 /* END of Front page styles */
 
-/* -----------------------------------------
-   Mobile CSS
------------------------------------------*/
-
 /* Navbar */
 
 .navbar .btn-navbar .icon-bar {
@@ -682,9 +750,47 @@ aside, section{
 .navbar .btn, .navbar .btn-group {
     margin-top: 2em;
 }
-
-
 /* END of Navbar */
+
+
+/* LOGIN FORM */
+input[type='text'], input[type='password'], input[type='text']:focus, input[type='password']:focus, .btn-primary{
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.btn-primary{
+	background:#0084c6;
+	padding: 0.5em 1em;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+	background:#339dd1;
+	padding: 0.5em 1em;
+}
+
+.form-actions{
+	padding:0;
+	background: none;
+	border:none;
+}
+
+.form-item .description{
+	font-style: italic;
+	color: #aaa;
+	display:inline-block;
+	vertical-align: top;
+	padding-top: 0.375em;
+	padding-left:0.5em;
+}
+
+/* END of LOGIN FORM */
+
+
+/* -----------------------------------------
+   Mobile CSS
+-----------------------------------------*/
+
 @media screen and (max-width: 979px) {
 	
 	.navbar .nav > li > a{
@@ -720,7 +826,7 @@ aside, section{
 	}
 
 	.navbar .nav {
-	    border:none;
+	    border: none;
 	    height: auto;
 	    padding: 1em 1em;
 	    text-align: left;
@@ -729,6 +835,12 @@ aside, section{
 	.navbar .nav:after {
 	    content: none;
 	}
+
+	.image-stack img{
+		display: block;
+		margin-bottom: 0.75em;
+	}
+
 }
 
 @media screen and (max-width: 767px) {
