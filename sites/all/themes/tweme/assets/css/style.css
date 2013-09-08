@@ -596,6 +596,68 @@ aside, section{
 /* END of FOOTER */
 
 
+/* SITE MAP */
+/* 1,2,3 */
+.site-map-column1 ul > li:first-child+li+li+li,
+.site-map-column1 ul > li:first-child+li+li+li+li,
+.site-map-column1 ul > li:first-child+li+li+li+li+li,
+.site-map-column1 ul > li:first-child+li+li+li+li+li+li,
+.site-map-column1 ul > li:first-child+li+li+li+li+li+li+li,
+.site-map-column1 ul > li:first-child+li+li+li+li+li+li+li+li{
+	display:none;
+}
+/* 4,5 */
+.site-map-column2 ul > li:first-child,
+.site-map-column2 ul > li:first-child+li,
+.site-map-column2 ul > li:first-child+li+li,
+.site-map-column2 ul > li:first-child+li+li+li+li+li,
+.site-map-column2 ul > li:first-child+li+li+li+li+li+li,
+.site-map-column2 ul > li:first-child+li+li+li+li+li+li+li,
+.site-map-column2 ul > li:first-child+li+li+li+li+li+li+li+li{
+	display:none;
+}
+
+
+/* 6,7,8,9 */
+.site-map-column3 ul > li:first-child,
+.site-map-column3 ul > li:first-child+li,
+.site-map-column3 ul > li:first-child+li+li,
+.site-map-column3 ul > li:first-child+li+li+li,
+.site-map-column3 ul > li:first-child+li+li+li+li{
+	display:none;
+}
+
+
+.site-map-box-menu-main-menu > div > ul > li  {
+	padding-bottom: 1em;
+	font-size: 1.5em;
+}
+
+.site-map-box-menu-main-menu > div > ul > li > ul  {
+	padding-top:0.25em;
+}
+
+
+.site-map-box-menu-main-menu > div > ul > li > ul > li > ul {
+	display: none;
+}
+
+.site-map-box-menu-main-menu ul, #site-map .site-map-box ul {
+	margin-left:0;
+	padding-left:0;
+}
+
+.site-map-box-menu-main-menu ul li {
+	font-size: 0.75em;
+	margin-left:0;
+	padding-left:0;
+	list-style: none;
+}
+
+
+/* END of SITE MAP */
+
+
 /* Front page styles: */
 
 .front-page aside, .front-page section{
