@@ -346,11 +346,13 @@ aside .nav > li {
 	margin-bottom:0.5em;
 }
 
+
 aside li a {
     color: #0084c6;
     border-bottom:1px solid #bedded;
     padding: 0.125em 0;
     line-height:1.6;
+    font-size: 0.875em;
 }
 
 aside li a:hover {
@@ -409,6 +411,10 @@ li.active.dropdown-submenu{
 
 .content p, .content ul, .content ol, .content table{
 	font-size: 0.875em;
+}
+
+aside .content ul {
+	font-size: 1em;
 }
 
 .section-images img {
