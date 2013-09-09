@@ -483,6 +483,7 @@ a.library-link:hover{
 	text-transform: uppercase;
 	border-bottom: solid 1px #e9e9e9;
 	margin-bottom: 0.875em;
+	padding-bottom: 0.25em
 }
 
 .related-links ul{
@@ -491,7 +492,6 @@ a.library-link:hover{
 
 .related-links ul li{
 	margin-bottom: 0.25em;
-	font-size: 0.875em;
 	list-style-type: decimal;
 }
 
@@ -800,11 +800,6 @@ aside, section{
 .front-page aside ul li{
 	line-height:1.4;
 	padding-bottom:0.625em;
-}
-
-
-.front-page aside li a {
-    font-size: 0.875em;
 }
 
 .front-page aside li a.active, .front-page aside li a.active:hover {
