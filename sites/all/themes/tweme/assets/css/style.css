@@ -408,7 +408,7 @@ li.active.dropdown-submenu{
 
 /* CONTENT STYLES */
 
-.content p{
+.content p, .content ul, .content ol, .content table{
 	font-size: 0.875em;
 }
 
