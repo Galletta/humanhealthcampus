@@ -88,7 +88,7 @@ a[href$='.pdf']{
 a[href^='http']:after{
 	content:'';
 	padding-right:17px;
-	background: url('../img/external-icon.png') right 3px no-repeat;
+	background: url('../img/external-icon.png') right 2px no-repeat;
 }
 
 a[href$='.pdf'][href^='http']:after{
@@ -413,8 +413,12 @@ li.active.dropdown-submenu{
 	font-size: 0.875em;
 }
 
-aside .content ul {
+aside .content ul, .content ul ul {
 	font-size: 1em;
+}
+
+.content ul ul li{
+	list-style-type: disc;
 }
 
 .section-images img {
@@ -564,6 +568,114 @@ a.library-link:hover{
 	margin-bottom: 1em;
 	margin-top: 1em;
 }
+
+/* Events styles */
+
+.events-list .event-holder h2{
+	padding-top:0;
+	margin-bottom:0.35em;
+}
+
+.event-holder .event-date, .event-holder .event-start, .event-holder .event-location, .event-holder .event-contact{
+	display:block;
+	margin-left:7em;
+	font-size: 0.875em;
+	position:relative;
+	margin-bottom:0.5em;
+}
+
+.events-list .event-holder .event-date, .events-list .event-holder .event-start, .events-list .event-holder .event-location, .events-list .event-holder .event-contact{
+	font-style: italic;
+	color: #9e9e9e;
+	font-size: 0.875em;
+	display: inline-block;
+	margin-bottom: 1em;
+	padding-left: 1.5em;
+	margin-right: 0.75em;
+	margin-left: 0;
+}
+
+.events-list .event-holder .event-date:before, .events-list .event-holder .event-start:before, .events-list .event-holder .event-location:before, .events-list .event-holder .event-contact:before{
+	background: none;
+	content: "";
+	width:0;
+	padding-left:0;
+	margin-right:0;
+}
+
+.events-list .event-holder .event-date, .event-holder .event-date:before{
+	background: url('../img/event-icons.png') left 0 no-repeat;
+}
+
+.events-list .event-holder .event-start, .event-holder .event-start:before{
+	background: url('../img/event-icons.png') left -26px no-repeat;
+}
+
+.events-list .event-holder .event-location, .event-holder .event-location:before{
+	background: url('../img/event-icons.png') left -52px no-repeat;
+}
+
+.events-list .event-holder .event-contact, .event-holder .event-contact:before{
+	background: url('../img/event-icons.png') left -79px no-repeat;
+}
+
+.events-list .event-holder .event-location, .events-list .event-holder .event-contact{
+	padding-left:1.35em;
+}
+
+.event-holder .event-date:before, .event-holder .event-start:before, .event-holder .event-location:before, .event-holder .event-contact:before{
+	font-style: italic;
+	color: #9e9e9e;
+	display: inline-block;
+	margin-bottom: 1em;
+	padding-left: 1.5em;
+	margin-right: 0.75em;
+	width:5em;
+	position: absolute;
+	left:-7em;
+}
+
+.event-holder .event-date:before{
+	content:"Dates: ";
+}
+
+.event-holder .event-start:before{
+	content:"Start date: ";
+}
+
+.event-holder .event-location:before{
+	content:"Location: ";
+}
+
+.event-holder .event-contact:before{
+	content:"Contact: ";
+}
+
+.event-holder .read-more{
+	font-size:0.875em;
+	display: block;
+	margin-top:1em;
+}
+
+.event-holder .read-more:after{
+	content:" »";
+}
+
+.events-list .event-holder{
+	border-top:solid 1px #e9e9e9;
+	margin-top:2em;
+	padding-top:1em;
+}
+
+.events-list .event-holder:first-child{
+	border-top:none;
+	margin-top:0;
+	padding-top:0;
+}
+
+/* END of events styles */
+
+
 
 /* END of CONTENT STYLES */
 
